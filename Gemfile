@@ -18,14 +18,48 @@ gem 'uglifier', '>= 1.3.0'
 
 # Use CoffeeScript for .coffee assets and views
 gem 'coffee-rails', '~> 4.2'
+# Use JQuery as part of the book
+gem 'jquery-rails'
 # Turbolinks makes navigating your web application faster. Read more: https://github.com/turbolinks/turbolinks
 gem 'turbolinks', '~> 5'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.5'
 # Use Redis adapter to run Action Cable in production
-# gem 'redis', '~> 4.0'
+gem 'redis', '~> 4.0'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
+# Use aasm for state machine
+gem 'aasm'
+gem 'local_time'
+gem 'lodash-rails'
+
+gem 'devise'
+gem 'devise_invitable'
+gem 'rolify'
+gem 'cancancan'
+
+gem 'paper_trail'
+gem 'ranked-model'
+gem 'bootstrap-sass', '~> 3.3.6'
+gem 'friendly_id', '~> 5.1.0'
+gem "slim-rails"
+gem 'sidekiq', '~> 5.2.4'
+
+gem 'sinatra', github: 'sinatra/sinatra', require: nil
+gem 'sidekiq-statistic'
+gem 'gravatar_image_tag'
+gem 'country_select'
+gem 'kaminari'
+gem 'paperclip'
+gem 'aws-sdk', '~> 2.3'
+gem 'money-rails'
+gem 'ransack'
+gem 'slack-notifier'
+
+gem 'premailer-rails'
+gem 'griddler'
+gem 'griddler-mailgun'
+gem 'rollbar'
 
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
@@ -39,17 +73,24 @@ gem 'bootsnap', '>= 1.1.0', require: false
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
+  gem 'rspec-rails'
 end
 
 group :development do
+	gem "letter_opener"
   # Access an interactive console on exception pages or by calling 'console' anywhere in the code.
   gem 'web-console', '>= 3.3.0'
   gem 'listen', '>= 3.0.5', '< 3.2'
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
+  gem 'capybara'
 end
 
+gem 'simplecov', :require => false, :group => :test
+gem "factory_bot_rails"
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+
+gem 'rack-cors', :require => 'rack/cors'
