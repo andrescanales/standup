@@ -40,7 +40,7 @@ gem 'cancancan'
 
 gem 'paper_trail'
 gem 'ranked-model'
-gem 'bootstrap-sass', '~> 3.3.6'
+gem 'bootstrap-sass', '~> 3.4.1'
 gem 'friendly_id', '~> 5.1.0'
 gem "slim-rails"
 gem 'sidekiq', '~> 5.2.4'
